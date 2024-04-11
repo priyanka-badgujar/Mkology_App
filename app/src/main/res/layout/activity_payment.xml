@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="@dimen/dimen_5dp"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/paymentSuccess">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_check_circle_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_success"
+                android:textSize="@dimen/dimen_20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorText"/>
+
+            <Button
+                android:id="@+id/successButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_button"
+                android:textColor="@color/colorWhite"
+                android:text="@string/back_to_courses"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="@dimen/dimen_5dp"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/paymentFailure">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_close_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_failure"
+                android:textSize="@dimen/dimen_20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorText"/>
+
+            <Button
+                android:id="@+id/failureButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_button"
+                android:textColor="@color/colorWhite"
+                android:text="@string/back_to_cart"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

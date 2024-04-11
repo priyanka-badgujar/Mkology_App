@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æôäãıÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(»Øµ³úÿÿÿÿ8¥‡…Ÿ.
+K
+java:S1128"/Remove this unused import 'retrofit2.Callback'.(›¨,8Ö½å¨Ÿ.

@@ -1,0 +1,7 @@
+
+t
+java:S1450
+"WRemove the "retrofit" field and declare it as a local variable in the relevant methods.(Š¢Ú½8÷‘œÙ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æôäãıÿÿÿÿ
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ÍÀÅ8÷‘œÙ.

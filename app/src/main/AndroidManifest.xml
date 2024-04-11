@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mkology.thelearningapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:usesCleartextTraffic">
+
+        <activity android:name="com.mkology.thelearningapp.loginPage.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mkology.thelearningapp.loginPage.MobileAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mkology.thelearningapp.loginPage.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mkology.thelearningapp.payment.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mkology.thelearningapp.navigationFragments.videos.VideosPlayer"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.mkology.thelearningapp.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mkology.thelearningapp.errorScreen.ErrorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.mkology.thelearningapp.splashScreen.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

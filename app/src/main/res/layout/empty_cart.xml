@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/no_items"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rectangle_card"
+        android:src="@drawable/empty_cart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_items"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/no_items_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A4A4A"
+            android:text="@string/no_items"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/no_items_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#929292"
+            android:layout_marginTop="8dp"
+            android:text="@string/empty_cart"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_courses">
+
+    <fragment
+        android:id="@+id/navigation_courses"
+        android:name="com.mkology.thelearningapp.navigationFragments.home.courses.CoursesFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_courses" />
+
+    <fragment
+        android:id="@+id/navigation_videos"
+        android:name="com.mkology.thelearningapp.navigationFragments.videos.VideosFragment"
+        android:label="@string/videos"
+        tools:layout="@layout/fragments_videos"/>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.mkology.thelearningapp.navigationFragments.about.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragments_about"/>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.mkology.thelearningapp.navigationFragments.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_subjects"
+        android:name="com.mkology.thelearningapp.navigationFragments.home.subjects.SubjectsFragment"
+        android:label="@string/subjects"
+        tools:layout="@layout/fragment_subjects"/>
+
+    <fragment
+        android:id="@+id/navigation_chapters"
+        android:name="com.mkology.thelearningapp.navigationFragments.home.chapters.ChaptersFragment"
+        android:label="@string/chapters"
+        tools:layout="@layout/fragment_chapters" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.mkology.thelearningapp.navigationFragments.addToCart.DisplayCartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart" />
+</navigation>

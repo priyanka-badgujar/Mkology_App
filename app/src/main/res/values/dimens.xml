@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    card items size-->
+    <dimen name="itemHeaderTextSize">16sp</dimen>
+    <dimen name="itemPriceTextSize">14sp</dimen>
+    <dimen name="itemButtonTextSize">14sp</dimen>
+    <dimen name="itemDescriptionTextSize">12sp</dimen>
+
+<!--    profile page box sizes-->
+    <dimen name="boxHeight">40dp</dimen>-->
+    <dimen name="boxMarginLeft">30dp</dimen>
+    <dimen name="boxMarginRight">30dp</dimen>
+    <dimen name="boxMarginTop">5dp</dimen>
+
+    <dimen name="boxPaddingLeft">10dp</dimen>
+    <dimen name="boxPaddingRight">10dp</dimen>
+    <dimen name="textPadding">10dp</dimen>
+    <dimen name="boxDrawablePadding">15dp</dimen>
+    <dimen name="cornerRadius">15dp</dimen>
+
+
+</resources>

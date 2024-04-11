@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/api_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/background_subject"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <TextView
+        android:id="@+id/cart_chapter_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_texture"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/itemHeaderTextSize"
+        android:fontFamily="sans-serif-medium"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/cart_chapter_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/itemPriceTextSize" />
+
+        <TextView
+            android:id="@+id/cart_chapter_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/itemPriceTextSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/cart_chapter_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/itemHeaderTextSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/remove_from_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_delete_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/title_bar"
+        android:title="@string/app_name"
+        android:actionLayout="@layout/title_layout"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:title="@string/cart"
+        app:actionLayout="@layout/header_layout"
+        app:showAsAction="always" />
+
+</menu>

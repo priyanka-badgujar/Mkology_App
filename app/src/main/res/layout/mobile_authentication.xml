@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context="com.mkology.thelearningapp.loginPage.MobileAuthActivity">
+
+    <TextView
+        android:id="@+id/login_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:layout_above="@id/cardMobile"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardMobile"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardElevation="0dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:rotation="180"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_triangle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingTop="70dp"
+                android:id="@+id/mobile_Verification">
+
+                <TextView
+                    android:id="@+id/mobile_auth_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_auth_title"
+                    android:textColor="@color/colorText"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:background="@color/colorAccent">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/cpp"
+                        android:background="@color/colorGrey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:ccp_showFlag="false"
+                        />
+
+                    <EditText
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGrey"
+                        android:textColor="@color/colorText"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="35dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:inputType="phone"
+                        android:hint="mobile"
+                        android:textCursorDrawable="@null"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/sendOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Send OTP"
+                    android:background="@color/colorSecond"/>
+
+                <TextView
+                    android:id="@+id/response_error_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/otp_verification_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include layout="@layout/mobile_verification_layout"/>
+
+                    <Button
+                        android:id="@+id/verify_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/colorAccent"
+                        android:text="Verify OTP"
+                        android:enabled="false"
+                        android:background="@color/colorSecond" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/et_bg_login"
+                    android:hint="Set Password"
+                    android:textColorHint="@color/colorHint"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/colorText"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/et_bg_login"
+                    android:hint="Confirm password"
+                    android:textColorHint="@color/colorHint"
+                    android:textColor="@color/colorText"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/locality"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/et_bg_login"
+                    android:hint="Your location"
+                    android:textColorHint="@color/colorHint"
+                    android:textColor="@color/colorText"
+                    android:textCursorDrawable="@null"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/error_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Sign up"
+                    android:background="@color/colorSecond" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:rotation="180"
+        android:layout_below="@id/cardMobile"
+        android:background="@drawable/shape_triangle_right"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1052104227647",
+    "firebase_url": "https://mkology-8241c.firebaseio.com",
+    "project_id": "mkology-8241c",
+    "storage_bucket": "mkology-8241c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052104227647:android:a3792a4765e70c4fbe718a",
+        "android_client_info": {
+          "package_name": "com.mkology.thelearningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052104227647-2kul7t14q5ov7k5tsu1c87tdac8ql13h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mkology.thelearningapp",
+            "certificate_hash": "dc9818f7a04f7d738f37fbdbefd0117999cde52c"
+          }
+        },
+        {
+          "client_id": "1052104227647-s921bnhtbhgp9lbl4cjq4v4arhgh6tr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCecRq0eyPExfeNGGcrXc5EcHnpEenvvHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052104227647-s921bnhtbhgp9lbl4cjq4v4arhgh6tr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+<resources>
+
+    <!--    Login and Registration strings-->
+    <string name="app_name">MKology</string>
+    <string name="welcome_title">MKology</string>
+    <string name="login_username">Email</string>
+    <string name="login_password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log out</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="mobile_auth_title">Please enter your mobile number</string>
+    <string name="forgot_password_title">Please enter your registered mobile number</string>
+    <string name="forgot_password_msg">Please check your email, we have sent an reset password link to your email. Please set new password using that link.</string>
+    <string name="submit">Submit</string>
+    <string name="empty_field_error">Please fill all the fields</string>
+    <string name="password_error">Password does not match</string>
+    <string name="password_length_error">Password is too short. The password length must be greater than 6 characters. </string>
+
+    <string name="phoneAuthErrorFirebase">Invalid code entered</string>
+    <string name="phoneAuthError">Something is wrong, we will fix it soon...</string>
+    <string name="mobile_already_registered">This mobile number is already registered. </string>
+
+
+    <!--    Bottom Nav Bar components-->
+    <string name="home">Home</string>
+    <string name="videos">Videos</string>
+    <string name="profile">Profile</string>
+    <string name="about">About us</string>
+
+    <string name="subjects">Subjects</string>
+    <string name="chapters">Chapters</string>
+    <string name="cart">Cart</string>
+
+    <!--    Cart system-->
+    <string name="remove_from_cart">Remove</string>
+    <string name="add_to_cart">Add</string>
+    <string name="buy_cart">Buy Now</string>
+    <string name="buy_now">Buy</string>
+    <string name="view">View</string>
+    <string name="no_items">No items to show</string>
+    <string name="empty_cart">Your cart have no items added yet.</string>
+    <string name="no_videos">No videos to show</string>
+    <string name="empty_videos">You have not purchased videos yet</string>
+    <string name="watch_now">Play</string>
+
+    <!--    Recyclerview items-->
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="watchText">Watch-</string>
+    <string name="durationText">Duration - </string>
+
+    <!--    Reset Password-->
+    <string name="reset_pass">Click here to reset password</string>
+    <string name="empty_pass">Please enter both the values</string>
+
+
+    <!--    Page Title names-->
+    <string name="cart_page">Cart</string>
+    <string name="videos_page">Videos</string>
+    <string name="profile_page">My Profile</string>
+
+    <!--    Search bar text -->
+    <string name="courses_search">Search courses</string>
+
+    <!--    Error msg -->
+<!--    <string name="server_error_msg">Unable to connect to server, please try again after some time.</string>-->
+
+<!--    <string name="internet_error_title">No internet</string>-->
+<!--    <string name="internet_error_msg">Please check your internet connection</string>-->
+
+    <string name="error_internet_1">No internet.</string>
+    <string name="error_internet_2">Please check your internet connection</string>
+
+    <string name="error_server_1">Unable to connect to server</string>
+    <string name="error_server_2">Please try again after some time</string>
+
+
+    <string name="retry_button">RETRY</string>
+    <string name="payment_success">Payment Successful</string>
+    <string name="payment_failure">Payment Failure</string>
+
+    <string name="back_to_courses">Back to Courses</string>
+    <string name="back_to_cart">Back to Cart</string>
+
+
+</resources>

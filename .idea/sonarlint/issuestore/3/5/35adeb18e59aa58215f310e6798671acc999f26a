@@ -1,0 +1,13 @@
+
+X	java:S125-"<This block of commented-out lines of code should be removed.(÷•×8×â¨Ÿ.
+X	java:S125G"<This block of commented-out lines of code should be removed.(³ÇÖõ8†…Ÿ.
+
+java:S11866"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºãªì8×â¨Ÿ.
+]	java:S125S"<This block of commented-out lines of code should be removed.(È¬½Öüÿÿÿÿ8©á€ƒŸ.
+W	java:S125:"<This block of commented-out lines of code should be removed.(†Ì§j8·øú„Ÿ.
+]	java:S125I"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8†…Ÿ.
+{
+java:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ô›Óíüÿÿÿÿ8·Æï„Ÿ.
+]	java:S125U"<This block of commented-out lines of code should be removed.(¡ÕÍ ûÿÿÿÿ8©á€ƒŸ.
+X	java:S125="<This block of commented-out lines of code should be removed.(‡·ıñ8†…Ÿ.
+X	java:S125C"<This block of commented-out lines of code should be removed.(ıöËŞ8†…Ÿ.

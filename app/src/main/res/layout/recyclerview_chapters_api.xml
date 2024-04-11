@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/background_chapter"
+    android:padding="1dp">
+
+    <TextView
+        android:id="@+id/chapter_name"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_texture"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/itemHeaderTextSize"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-medium"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/chapter_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/itemPriceTextSize" />
+
+        <TextView
+            android:id="@+id/chapter_watch_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorText"
+            android:layout_below="@id/chapter_duration"
+            android:textSize="@dimen/itemPriceTextSize" />
+
+        <TextView
+            android:id="@+id/chapter_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/chapter_watch_count"
+            android:textSize="@dimen/itemPriceTextSize"
+            android:textStyle="bold"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp">
+
+            <Button
+                android:id="@+id/chapters_add_to_cart"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_rectangle_button_card"
+                android:drawableLeft="@drawable/ic_add_shopping_cart_black_24dp"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="4dp"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/chapter_remove_from_cart"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_rectangle_button_card"
+                android:drawableLeft="@drawable/ic_remove_shopping_cart_black_24dp"
+                android:text="@string/remove_from_cart"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="4dp"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/watch_now"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_rectangle_button_card"
+                android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+                android:text="@string/watch_now"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="4dp"
+                android:textAllCaps="false"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
